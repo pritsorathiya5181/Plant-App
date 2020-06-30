@@ -1,8 +1,8 @@
-import 'package:Plant_app/constants.dart';
 import 'package:Plant_app/screens/home/components/complete_title.dart';
+import 'package:Plant_app/screens/home/components/featured_plants.dart';
 import 'package:Plant_app/screens/home/components/header_box.dart';
+import 'package:Plant_app/screens/home/components/recomended_plant.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -16,9 +16,14 @@ class Body extends StatelessWidget {
             title: 'Recomended',
             press: () {},
           ),
+          RecomendedPlants(),
+          CompleteTitle(
+            title: 'Featured Plants',
+            press: () {},
+          ),
+          FeaturedPlants()
         ],
       ),
     );
   }
 }
-
